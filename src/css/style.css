@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --colortitle: #13183f;
+  --colortext: #83869a;
+  --degradado: linear-gradient(#f02aa6, #ff6f48);
+  --sizetitle: 46px;
+  --sizetext: 18px;
+  --sizesubtitle: 24px;
+  --boxradius: 30px;
+  --iconradius: 50%;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -23,5 +34,156 @@ a {
 
 body {
   margin: 0;
-  background-image: url(../assets/images/sleep-cat.jpeg);
+  background-image: linear-gradient(white, #f0f1ff);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    flex-direction: row;
+    justify-items: center;
+    margin-left: 8rem;
+  }
+}
+
+.logo {
+  position: absolute;
+  margin-top: 0.5rem;
+  width: 6rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60%;
+  background-color: var(--colortitle);
+  color: white;
+  border-radius: var(--boxradius);
+  height: 2.5rem;
+  width: 8rem;
+  font-size: var(--sizetext);
+}
+
+@media screen and (min-width: 600px) {
+  .button {
+    position: absolute;
+  }
+}
+
+.title {
+  color: var(--colortitle);
+  font-size: var(--sizetitle);
+}
+
+@media screen and (min-width: 600px) {
+  .portal {
+    margin-top: 4rem;
+    width: 30%;
+    margin-top: 5rem;
+  }
+}
+
+.subtitle {
+  color: var(--colortext);
+  margin-top: -0.2rem;
+}
+
+.photo {
+}
+
+@media screen and (min-width: 600px) {
+  .photo {
+    margin-top: 4rem;
+    width: 35%;
+    position: relative;
+    margin-left: 15%;
+  }
+}
+
+.button--gta {
+  background-image: var(--degradado);
+  margin-left: 0;
+}
+
+.cards {
+  margin-top: -3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 27% 27% 27%;
+    grid-template-rows: 300px 300px;
+  }
+}
+
+.card {
+  height: 259px;
+  border-radius: 0.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.card--gradient {
+  background-image: var(--degradado);
+  align-items: center;
+  justify-content: center;
+  font-size: var(--sizetext);
+  color: white;
+  font-weight: bold;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .card--gradient {
+    height: 259px;
+    font-size: var(--sizetitle);
+  }
+}
+
+.card__icon {
+  position: relative;
+  margin-top: -2rem;
+  width: 3rem;
+}
+
+.card__name {
+  font-size: var(--sizesubtitle);
+  color: var(--colortitle);
+}
+
+.card__description {
+  font-size: var(--sizetext);
+  color: var(--colortext);
+}
+
+.card__link {
+  color: #ff6f48;
+  font-weight: bolder;
+  font-size: var(--sizetext);
+  margin-top: 0.5rem;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: var(--colortitle);
+  margin-top: 2rem;
+}
+
+.button--gradient {
+  background-image: linear-gradient(#4851ff, #f02aa6);
 }
