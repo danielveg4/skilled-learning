@@ -39,14 +39,22 @@ body {
 
 .header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 1rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .header {
     flex-direction: row;
-    justify-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+
     margin-left: 8rem;
   }
 }
@@ -70,7 +78,7 @@ body {
   font-size: var(--sizetext);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .button {
     position: absolute;
   }
@@ -81,9 +89,20 @@ body {
   font-size: var(--sizetitle);
 }
 
-@media screen and (min-width: 600px) {
+.portal {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
   .portal {
+    width: 69%;
     margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .portal {
     width: 30%;
     margin-top: 5rem;
   }
@@ -97,11 +116,16 @@ body {
 .photo {
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .photo {
     margin-top: 4rem;
-    width: 35%;
     position: relative;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .photo {
+    width: 35%;
     margin-left: 15%;
   }
 }
@@ -109,6 +133,18 @@ body {
 .button--gta {
   background-image: var(--degradado);
   margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .button--gta {
+    margin-top: 15rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button--gta {
+    margin-top: 16rem;
+  }
 }
 
 .cards {
@@ -119,11 +155,19 @@ body {
   gap: 1rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .cards {
     display: grid;
+    grid-template-columns: 46.5% 46.5%;
+    grid-template-rows: 300px 300px 300px;
+    margin-left: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cards {
     grid-template-columns: 27% 27% 27%;
     grid-template-rows: 300px 300px;
+    margin-left: 7.5rem;
   }
 }
 
@@ -148,7 +192,7 @@ body {
   margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .card--gradient {
     height: 259px;
     font-size: var(--sizetitle);
@@ -182,6 +226,13 @@ body {
   padding: 1rem;
   background-color: var(--colortitle);
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 4.5rem;
+    padding-left: 8.5rem;
+  }
 }
 
 .button--gradient {
