@@ -1,6 +1,6 @@
 # Skilled elearning
 
-![Imagen del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/IMAGEN-DEL-PROYECTO.jpg?raw=true)
+![Imagen del proyecto](https://github.com/danielveg4/skilled-learning/blob/main/captura.png?raw=true)
 
 ## Ejemplo en vivo
 
